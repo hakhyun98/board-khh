@@ -14,7 +14,7 @@ public class HomeController {
 
     @GetMapping
     public String goHome() {
-        return "/sb-admin-2/index";
+        return "/main/index";
     }
     @GetMapping("/buttons")
     public String goButtons() {
