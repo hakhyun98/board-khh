@@ -1,13 +1,13 @@
-package idusw.springboot.board3b;
+package idusw.springboot.boardKhh;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication  //(exclude = DataSourceAutoConfiguration.class)
-public class Board3BApplication {
+public class BoardKhhApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Board3BApplication.class, args);
+        SpringApplication.run(BoardKhhApplication.class, args);
     }
 
 }

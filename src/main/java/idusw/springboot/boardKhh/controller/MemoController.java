@@ -1,7 +1,7 @@
-package idusw.springboot.board3b.controller;
+package idusw.springboot.boardKhh.controller;
 
-import idusw.springboot.board3b.domain.Memo;
-import idusw.springboot.board3b.service.MemoService;
+import idusw.springboot.boardKhh.domain.Memo;
+import idusw.springboot.boardKhh.service.MemoService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

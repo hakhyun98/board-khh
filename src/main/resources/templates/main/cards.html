@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 
 <head>
 
@@ -9,10 +10,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>EGY Blog - Cards</title>
+    <title>KHH Blog - Cards</title>
 
     <!-- Custom fonts for this template-->
-    <div th:replace="~{/main/replace-fragment :: top}"></div>
+    <div th:replace="~{/main/main-fragment :: header}"></div>
 
 </head>
 
@@ -22,7 +23,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <div th:replace="~{/main/replace-fragment :: sidebar}"></div>
+        <div th:replace="~{/main/main-fragment :: sidebar}"></div>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -457,7 +458,7 @@
         </div>
     </div>
 
-    <div th:replace="~{/main/replace-fragment :: bottom}"></div>
+    <div th:replace="~{/main/main-fragment :: footer}"></div>
 
 </body>
 

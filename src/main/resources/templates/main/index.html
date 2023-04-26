@@ -9,10 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>EGY Blog - Dashboard</title>
+    <title>KHH Blog - Dashboard</title>
 
     <!-- Custom fonts for this template-->
-    <div th:replace="~{/main/replace-fragment :: top}"></div>
+    <div th:replace="~{/main/main-fragment :: header}"></div>
 
 </head>
 
@@ -22,7 +22,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <div th:replace="~{/main/replace-fragment :: sidebar}"></div>
+        <div th:replace="~{/main/main-fragment :: sidebar}"></div>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -32,7 +32,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <div th:replace="~{/main/replace-fragment :: topbar}"></div>
+                <div th:replace="~{/main/main-fragment :: topbar}"></div>
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -352,7 +352,7 @@
                                     <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
                                 </div>
                                 <div class="card-body">
-                                    <p>EGY Blog makes extensive use of Bootstrap 4 utility classes in order to reduce
+                                    <p>KHH Blog makes extensive use of Bootstrap 4 utility classes in order to reduce
                                         CSS bloat and poor page performance. Custom CSS classes are used to create
                                         custom components and custom utility classes.</p>
                                     <p class="mb-0">Before working with this theme, you should become familiar with the
@@ -410,7 +410,13 @@
         </div>
     </div>
 
-    <div th:replace="~{/main/replace-fragment :: bottom}"></div>
+    <div th:replace="~{/main/main-fragment :: footer}"></div>
+    <script src="/vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="/js/demo/chart-area-demo.js"></script>
+    <script src="/js/demo/chart-pie-demo.js"></script>
+
 
 </body>
 

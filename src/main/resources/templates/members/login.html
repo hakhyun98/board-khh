@@ -9,10 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>EGY Blog - Login</title>
+    <title>KHH Blog - Login</title>
 
     <!-- Custom fonts for this template-->
-    <div th:replace="~{/main/replace-fragment :: top}"></div>
+    <div th:replace="~{/main/main-fragment :: header}"></div>
 
 </head>
 
@@ -35,14 +35,13 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
-                                    <form class="user" th:action="" th:method="post">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
+                                        <div class="user" th:action="@{'/members/login'}" th:object="${member}" th:method="post">
+                                            <input type="email" name="email" th:field="*{email}" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
                                                 placeholder="Enter Email Address...">
                                         </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
+                                        <div lass="user" th:action="@{'/members/login'}" th:object="${member}" th:method="post">
+                                            <input type="password" name="pw" th:field="*{pw}" class="form-control form-control-user"
                                                 id="exampleInputPassword" placeholder="Password">
                                         </div>
                                         <div class="form-group">
@@ -52,9 +51,9 @@
                                                     Me</label>
                                             </div>
                                         </div>
-                                        <a href="../main/index.html" class="btn btn-primary btn-user btn-block">
+                                       <input type="submit" value="Login" class="btn btn-primary btn-user btn-block">
                                             Login
-                                        </a>
+                                        </input>
                                         <hr>
                                         <a href="../main/index.html" class="btn btn-google btn-user btn-block">
                                             <i class="fab fa-google fa-fw"></i> Login with Google
@@ -65,10 +64,10 @@
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                        <a class="small" href="/members/forgot">Forgot Password?</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="register.html">Create an Account!</a>
+                                        <a class="small" href="/members/register">Create an Account!</a>
                                     </div>
                                 </div>
                             </div>
@@ -83,7 +82,7 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <div th:replace="~{/main/replace-fragment :: bottom}"></div>
+    <div th:replace="~{/main/main-fragment :: footer}"></div>
 
 </body>
 

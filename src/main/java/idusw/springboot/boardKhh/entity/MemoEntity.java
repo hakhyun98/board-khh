@@ -1,4 +1,4 @@
-package idusw.springboot.board3b.entity;
+package idusw.springboot.boardKhh.entity;
 
 
 import jakarta.persistence.*;
